@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  min-width: 320px;
+  height: 100%;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* 字体图标相关 */
+@font-face {
+  font-family: "myfont";
+  src: url(../lib/icofont/iconfont.ttf) format("truetype");
+}
+.myfont {
+  font-family: "myfont";
+}
+input {
+  outline: none;
+  border: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/* 尺寸相关 */
+.w_100 {
+  width: 100%;
+}
+/* 颜色相关 */
+.b_e43 {
+  background-color: #e43130;
+}
+.b_3f {
+  background-color: #fff;
+}
+.b_30 {
+  background-color: #000;
+}
+.b_f1 {
+  background-color: #f1f1f1;
+}
+.b_80 {
+  background-color: #808080;
+}
+.c_3f {
+  color: #fff;
+}
+.c_30 {
+  color: #000;
+}
+.c_80 {
+  color: #808080;
+}
+.c_e43 {
+  color: #e43130;
+}
+/* 字体大小相关 */
+.f_r12 {
+  font-size: 1.2rem;
+}
+.f_r15 {
+  font-size: 1.5rem;
+}
+.f_r10 {
+  font-size: 1rem;
+}
+.f_r08 {
+  font-size: 0.8rem;
+}
+.fw_b {
+  font-weight: bold;
+}
+/* flex部分 */
+.flex_sa {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex_sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex_col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* margin部分 */
+.mt_15 {
+  margin-top: 15px;
+}
+/* padding */
+.p_15 {
+  padding: 0 15px;
+}
+/* 头部公共类 */
+header {
+  height: 48px;
+}
+/* 主题main */
+main {
+  overflow-y: auto;
+  flex: 1;
+}
+/* position相关 */
+.p_a {
+  position: absolute;
+}
+.p_r {
+  position: relative;
+}
+/* footer */
+footer {
+  width: 100%;
+  height: 48px;
+}
+footer span {
+  width: 25%;
+  height: 40px;
+  line-height: 20px;
+  display: inline-block;
+  text-align: center;
+}

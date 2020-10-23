@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./images/Bell.png" rel="shortcut icon" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./lib/icofont/iconfont.css" />
+    <link rel="stylesheet" href="./css/shopCar.css" />
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./js/shopCar.js"></script>
+    <title>LeGou_购物车</title>
+  </head>
+  <body>
+    <header class="b_3f flex_sb p_15">
+      <i class="myfont c_30 icon-arrowLeft-fill f_r15" id="back"></i>
+      <span>购物车</span>
+    </header>
+    <main class="p_r">
+      <ul class="flex_col w_100">
+        <script>
+          for (let i = 0; i < 4; i++) {
+            document.write(`
+                  <li class="flex_sb b_3f w_100">
+                    <input type="checkbox">
+                    <img src="./images/shop-list-img01.webp" alt="">
+                    <div class='content'>
+                        <p>Apple ipad 平板电脑</p>
+                        <p class='c_80 f_r08'>颜色分类：8GB+128GB版</p>
+                        <p class='c_e43 mt_15'>￥ <span class='unit'>3268.00</span></p>
+                        <p><button class='reduce'>-</button><span class='num'>1</span><button class='add'>+</button></p>
+                    </div>
+                </li>
+                  `);
+          }
+        </script>
+      </ul>
+      <div class="total_box w_100 flex_sb">
+        <label class="flex_sb">
+          <input type="checkbox" id="total_c" />已选(<span class="total_num"
+            >0</span
+          >)
+        </label>
+
+        <label>
+          <span class="c_80">合计 ￥</span><span class="total_price c_e43">0.00</span>
+          <button class="total_btn b_e43 c_3f f_r10">去结算</button>
+        </label>
+      </div>
+    </main>
+    <!-- 底部导航footer -->
+    <footer class="b_3f flex_sa c_80">
+      <span>
+        <i class="myfont icon-icon_huabanfuben f_r15 c_80"></i>
+        <p class="f_r08">首页</p>
+      </span>
+      <span>
+        <i class="myfont icon-fenlei f_r12 c_80"></i>
+        <p class="f_r08">分类</p>
+      </span>
+      <span class="c_e43">
+        <i class="myfont icon-icon- f_r15"></i>
+        <p class="f_r08">购物车</p>
+      </span>
+      <span>
+        <i class="myfont icon-wode f_r12 c_80"></i>
+        <p class="f_r08">我的</p>
+      </span>
+    </footer>
+    <script src="./js/common.js"></script>
+  </body>
+</html>

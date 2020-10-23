@@ -1,0 +1,69 @@
+header span{
+    flex: 1;
+    text-align: center;
+}
+main ul{
+    justify-content: flex-start !important;
+    margin-top: 2px;
+}
+main ul li{
+    height: 135px;
+    padding: 0 15px;
+    margin-bottom: 2px;
+}
+main ul li img{
+    width: 100px;
+    height: 120px;
+}
+main ul li .content{
+    width: 50%;
+    height: 85%;
+}
+.content p{
+    margin: 12px 0;
+}
+.content button{
+    background-color: #fff;
+    outline: none;
+    border: 1px solid #808080;
+    width: 30px;
+}
+.content p:last-of-type span{
+    display: inline-block;
+    padding: 0 5px;
+}
+.content p:last-of-type{
+    text-align: right;
+}
+input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+    appearance: none;
+    border: 1px solid #808080;
+    border-radius: 50%;
+    position: relative;
+}
+input[type="checkbox"]:checked{
+    background-color: #e43130;
+    border: 0;
+}
+input[type="checkbox"]:checked::after{
+    content: "✔";
+    color: #fff;
+    position: absolute;
+    left:3px;
+    top:-1px;
+}
+.total_box{
+    line-height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 15px;
+}
+.total_box button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    margin-left: 15px;
+}

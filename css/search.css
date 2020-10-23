@@ -1,0 +1,36 @@
+html,body{
+    justify-content: flex-start;
+}
+header label{
+    width: 220px;
+    height: 30px;
+    border-radius: 15px;
+    padding: 0 10px;
+}
+header label input{
+    width: 85%;
+}
+header span{
+    display: inline-block;
+    padding: 8px;
+    border-radius: 5px;
+}
+/* 搜索历史 */
+.history{
+    margin-top: 5px;
+    padding-top: 5px;
+    min-height: 30px;
+}
+.history p:last-of-type{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.history p:last-of-type span{
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 0.8rem;
+    border-radius:10px;
+    background-color: #f0f2f5;;
+}

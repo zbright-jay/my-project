@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./images/Bell.png" rel="shortcut icon" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./lib/icofont/iconfont.css" />
+    <link rel="stylesheet" href="./css/classify.css" />
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./js/classify.js"></script>
+    <title>LeGou_分类</title>
+  </head>
+  <body>
+    <header class="b_3f flex_sb p_15">
+      <i class="myfont c_30 icon-arrowLeft-fill f_r15" id="back"></i>
+      <label for="" class="b_f1 flex_sb"
+        ><i class="myfont icon-sousuo c_80 f_r12"></i>
+        <input type="search" class="b_f1" placeholder="搜你想搜"
+      /></label>
+    </header>
+    <main class="flex_sb">
+      <ul class="flex_col">
+          <script>
+              for(let j=0;j<12;j++){
+                  document.write(`
+                  <li></li>
+                  `)
+              }
+          </script>
+      </ul>
+      <div class="classify_content">
+        <script>
+          for (let i = 0; i < 12; i++) {
+            document.write(`
+                  <div class="classify_box">
+                    <p class='title'>手机数码</p>
+                    <div class="flex_sb w_100 list">
+                        <span>
+                        <img src="./images/cagegory-img01.png" alt="" />
+                        <p>手机</p>
+                        </span>
+                        <span>
+                        <img src="./images/cagegory-img02.png" alt="" />
+                        <p>手机</p>
+                        </span>
+                        <span>
+                        <img src="./images/cagegory-img03.png" alt="" />
+                        <p>手机</p>
+                        </span>
+                        <span>
+                        <img src="./images/cagegory-img04.png" alt="" />
+                        <p>手机</p>
+                        </span>
+                        <span>
+                        <img src="./images/cagegory-img05.png" alt="" />
+                        <p>手机</p>
+                        </span>
+                        <span>
+                        <img src="./images/cagegory-img06.png" alt="" />
+                        <p>手机</p>
+                        </span>
+                        <span>
+                        <img src="./images/cagegory-img07.png" alt="" />
+                        <p>手机</p>
+                        </span>
+                        <span>
+                        <img src="./images/cagegory-img08.png" alt="" />
+                        <p>手机</p>
+                        </span>
+                        <span>
+                        <img src="./images/cagegory-img09.png" alt="" />
+                        <p>手机</p>
+                        </span>
+                    </div>
+                    </div>
+                  `);
+          }
+        </script>
+      </div>
+    </main>
+    <!-- 底部导航footer -->
+    <footer class="b_3f flex_sa c_80">
+      <span>
+        <i class="myfont icon-icon_huabanfuben f_r15 c_80"></i>
+        <p class="f_r08">首页</p>
+      </span>
+      <span class="c_e43">
+        <i class="myfont icon-fenlei f_r12"></i>
+        <p class="f_r08">分类</p>
+      </span>
+      <span>
+        <i class="myfont icon-icon- f_r15 c_80"></i>
+        <p class="f_r08">购物车</p>
+      </span>
+      <span>
+        <i class="myfont icon-wode f_r12 c_80"></i>
+        <p class="f_r08">我的</p>
+      </span>
+    </footer>
+    <script src="./js/common.js"></script>
+  </body>
+</html>
