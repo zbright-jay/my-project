@@ -1,0 +1,245 @@
+/* 首页横幅图片 */
+.banner {
+  height: 550px;
+  background: url("../images/banner1.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+.banner img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text_box {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 15px;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+}
+.banner p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+.banner h1 {
+  font-size: 40px;
+  line-height: 2em;
+  text-align: center;
+  color: #fff;
+}
+/* 产品中部介绍 */
+.introduce div {
+  padding: 15px 15px;
+  box-sizing: border-box;
+}
+.introduce .pic1 {
+  float: left;
+  width: 400px;
+  height: 210px;
+  background: url("../images/01.jpg");
+}
+.introduce .pic2 {
+  float: left;
+  width: 400px;
+  height: 210px;
+  background: url("../images/02.jpg");
+}
+.introduce .pic3 {
+  float: left;
+  width: 400px;
+  height: 210px;
+  background: url("../images/03.jpg");
+}
+.introduce div h3 {
+  font-size: 20px;
+  line-height: 60px;
+  color: #fff;
+  font-weight: 550;
+  text-align: center;
+}
+.introduce div p {
+  font-size: 14px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+}
+.list_title {
+  color: #bbb8b5;
+  height: 180px;
+  padding: 60px 0;
+  font-size: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+.list_title a {
+  font-size: 25px;
+  color: #000;
+  margin-right: 20px;
+}
+.list_title hr {
+  width: 50px;
+  height: 3px;
+  border: 0;
+  background-color: #15bded;
+}
+/* 产品展示 */
+/* 产品展示-左边图片组 */
+.product_l {
+  width: 570px;
+  height: 580px;
+  float: left;
+  box-sizing: border-box;
+}
+.product_l .product_pic {
+  width: 270px;
+  height: 275px;
+  float: left;
+  box-sizing: border-box;
+  margin: 0 0 30px 30px;
+  position: relative;
+  transition: all linear 1s;
+}
+.product_l div:nth-child(2n-1) {
+  margin: 0;
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 100px 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 0;
+  line-height: 40px;
+  transition: all linear 0.5s;
+}
+.product_l .mask p {
+  text-align: center;
+}
+.product_l .mask p a {
+  color: #000;
+  font-size: 25px;
+}
+.product_l .mask p:nth-child(2) a {
+  font-size: 25px;
+  color: #15bded;
+}
+/* 产品展示-右边图片组 */
+.product_r {
+  width: 600px;
+  height: 580px;
+  float: right;
+  position: relative;
+}
+.product_r p {
+  text-align: center;
+}
+.product_r .mask {
+  padding-top: 220px;
+  box-sizing: border-box;
+}
+.product_r .mask p a {
+  font-size: 30px;
+  color: #000;
+}
+.product_r .mask p:nth-child(2) a {
+  font-size: 30px;
+  color: #15bded;
+}
+.product_r .mask p:nth-child(3) a {
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  border-radius: 25px;
+  border: 1px solid #000;
+  text-align: center;
+  line-height: 45px;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.mask:hover {
+  opacity: 1;
+}
+/* 关于我们 */
+.about_part {
+  height: 510px;
+  margin: 50px 0 0 0;
+  padding: 80px 0;
+  box-sizing: border-box;
+  background: url("../images/banner3.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+.about_part h1 {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+.about_part hr {
+  background-color: #15bded;
+  width: 50px;
+  height: 3px;
+  border: 0;
+  margin-bottom: 20px;
+}
+.about_part p {
+  text-align: center;
+  font-size: 14px;
+  color: #6b6b6b;
+  line-height: 2em;
+}
+.about_part p a {
+  display: inline-block;
+  width: 155px;
+  height: 45px;
+  line-height: 45px;
+  margin-top: 40px;
+  background-color: #15bded;
+  color: white;
+  font-size: 16px;
+  border-radius: 25px;
+  text-align: center;
+}
+/* 新闻动态 */
+.news_pic_box img {
+  float: left;
+  margin-left: 30px;
+}
+.news_pic_box img:first-child {
+  margin: 0;
+}
+.news_pic_box ul {
+  width: 380px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.news_pic_box ul.first {
+  margin-left: 0;
+}
+.news_pic_box ul li {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 2px solid #dcdcde;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #6a6a6a;
+}
+.news_pic_box ul li a {
+  color: #15bded;
+  font-weight: bold;
+  margin-right: 3px;
+}
+.news_pic_box ul li span {
+  float: right;
+  font-size: 12px;
+  color: #cfcfd5;
+}

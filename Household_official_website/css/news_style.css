@@ -1,0 +1,48 @@
+.banner {
+    background: url(../images/banner5.jpg) no-repeat;
+    height: 300px;
+    background-size: 100% 100%;
+  }
+aside ul li{
+    height: 100px;
+    line-height: 100px;
+}
+.news_box{
+    float:right;
+    width: 900px;
+}
+.news_box ul li{
+    height: 100px;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 20px 0;
+}
+.news_box dl dt{
+    font-size: 15px;
+}
+.news_box dl dd:nth-of-type(2){
+    font-size: 14px;
+    color: #666;
+}
+.news_box dl dd:nth-of-type(1){
+    font-size: 12px;
+    color: #cfcfd5;
+    margin: 5px 0;
+}
+/* 分页 */
+.page {
+    width: 100%;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .page button {
+    background-color: #fff;
+    margin-left: 10px;
+    outline: none;
+  }
+  .page button:hover,
+  button.check {
+    color: red;
+  }

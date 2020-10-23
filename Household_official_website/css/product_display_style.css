@@ -1,0 +1,52 @@
+.banner {
+  background: url(../images/banner5.jpg) no-repeat;
+  height: 300px;
+  background-size: 100% 100%;
+}
+.r_box {
+  width: 900px;
+  float: right;
+}
+.r_box .pic_box {
+  width: 290px;
+  height: 335px;
+  border: 1px solid #f2f2f2;
+  float: left;
+  box-sizing: border-box;
+  margin: 15px 0 0 15px;
+  padding: 15px;
+}
+.r_box .pic_box:nth-child(3n + 1) {
+  margin: 15px 0 0 0;
+}
+.r_box .pic_box img {
+  width: 100%;
+  height: 260px;
+}
+.r_box .pic_box p {
+  font-size: 13px;
+  color: #000;
+  line-height: 1.5em;
+}
+.r_box .pic_box p a {
+  color: #b2b2bc;
+  font-size: 14px;
+}
+/* 分页 */
+.page {
+  width: 100%;
+  height: 50px;
+  float: left;
+  line-height: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
+.page button{
+  background-color: #fff;
+  margin-left: 10px;
+  outline: none;
+}
+.page button:hover,button.check{
+  color: red;
+}
+

@@ -1,0 +1,296 @@
+@charset "utf-8";
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+form,
+table,
+tr,
+td,
+ul,
+li,
+ol,
+dl,
+dd,
+dt {
+  margin: 0;
+  padding: 0;
+}
+.cf::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+body {
+  background-color: white;
+  min-width: 1280px;
+  font-family: 微软雅黑;
+  overflow-x: hidden;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+@font-face {
+  font-family: "iconfont";
+  src: url("../fonts/iconfont.ttf") format("truetype");
+}
+@font-face {
+  font-family: "icon";
+  src: url("../fonts/iconfont2.ttf") format("truetype");
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 25px;
+  font-style: normal;
+  color: #86868a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon {
+  font-family: "icon";
+  font-size: 15px;
+  font-style: normal;
+  color: #86868a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/* 顶部导航条 */
+.top_nav {
+  height: 45px;
+  line-height: 40px;
+  background-color: #252525;
+}
+.top_nav a {
+  color: #fff;
+  font-size: 12px;
+}
+.top_nav .container span {
+  float: right;
+}
+.top_nav .container span a {
+  margin-left: 20px;
+  color: #fff;
+  font-size: 12px;
+}
+/* 顶部导航栏 */
+header {
+  height: 100px;
+  line-height: 100px;
+  background-color: #fff;
+}
+header .container img {
+  margin-top: 20px;
+  float: left;
+}
+.container nav {
+  float: right;
+}
+header .container nav a {
+  color: #000;
+  margin-left: 30px;
+  font-size: 16px;
+  position: relative;
+}
+header .container nav a::after {
+  content: "";
+  width: 20px;
+  height: 3px;
+  background-color: #15bded;
+  position: absolute;
+  opacity: 0;
+  left: 50%;
+  bottom: -10px;
+  transition: all 1s;
+  transform: translate(-50%);
+}
+header .container nav a:hover::after {
+  opacity: 1;
+}
+header .container nav .on::after {
+  opacity: 1;
+}
+/* 左边列表部分 */
+h4 {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 2px solid #f2f2f2;
+}
+h4 a.container {
+  display: block;
+  color: #a4a5a9;
+  font-weight: 300;
+  font-size: 14px;
+}
+.list_title {
+  color: #bbb8b5;
+  height: 100px;
+  padding: 40px 0;
+  box-sizing: border-box;
+  font-size: 25px;
+}
+.list_title a {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  margin-right: 30px;
+}
+.list_title hr {
+  width: 50px;
+  height: 3px;
+  border: 0;
+  background-color: #15bded;
+}
+aside {
+  width: 260px;
+  float: left;
+}
+aside ul li {
+  width: 100%;
+  height: 50px;
+  background-color: #f2f2f2;
+  color: #000;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+  line-height: 50px;
+}
+aside ul li:first-child {
+  margin: 0;
+}
+aside img {
+  width: 100%;
+  height: 260px;
+  margin-top: 20px;
+}
+/* 底部信息栏 */
+footer {
+  background-color: #141414;
+  height: 450px;
+  padding: 70px 0;
+  margin-top: 65px;
+  position: relative;
+}
+.footer_view {
+  width: 380px;
+  height: 280px;
+  position: relative;
+  float: left;
+  margin-left: 30px;
+  font-size: 14px;
+  color: #818388;
+  line-height: 45px;
+  box-sizing: border-box;
+}
+.footer_view p i {
+  margin-right: 10px;
+}
+.footer_view p img {
+  margin-bottom: 30px;
+}
+.footer_view p a {
+  color: #818388;
+}
+.footer_view:first-child {
+  margin-left: 0;
+}
+.footer_view hr {
+  width: 50px;
+  height: 3px;
+  border: 0;
+  margin-bottom: 20px;
+  background-color: #308266;
+}
+.mid {
+  padding: 0 70px;
+  line-height: 60px;
+}
+.footer_view h2 {
+  color: #fff;
+  font: 18px;
+  line-height: 50px;
+  font-weight: bold;
+}
+.footer_view h2 a {
+  color: #fff;
+}
+.foot_input {
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  margin-top: 50px;
+}
+.foot_input input {
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  text-indent: 1em;
+  border: 0;
+  outline: none;
+  color: #fff;
+  background-color: #333333;
+}
+.foot_input input::placeholder {
+  color: #8a8a8a;
+  font-size: 14px;
+}
+.foot_input button {
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #308266;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 3px;
+  border: 0;
+  position: absolute;
+  left: 205px;
+  outline: none;
+  top: 0;
+}
+.footer_text {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  height: 75px;
+  line-height: 75px;
+  background-color: #000;
+  text-align: center;
+  font-size: 12px;
+  color: #818388;
+}
+.focus {
+  margin-top: 30px;
+  line-height: 60px;
+  position: relative;
+}
+.focus a {
+  font-size: 16px;
+  font-weight: bold;
+}
+.focus img {
+  margin-left: 20px;
+  position: absolute;
+  top: 17px;
+}

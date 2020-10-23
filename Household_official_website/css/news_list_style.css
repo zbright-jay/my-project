@@ -1,0 +1,58 @@
+aside ul li {
+  height: 100px;
+  line-height: 100px;
+}
+.newslist_box {
+  width: 900px;
+  float: right;
+}
+.newslist_box h3 {
+  text-align: center;
+}
+.newslist_box p:first-of-type {
+  text-align: center;
+  font-size: 12px;
+  margin: 20px 0;
+  color: #aaa;
+}
+.newslist_box p:first-of-type span {
+  margin-left: 30px;
+}
+.newslist_box p:first-of-type span img {
+  width: 50px;
+  height: 20px;
+  margin-left: 10px;
+}
+.newslist_box .text_box {
+  text-indent: 2em;
+  font-size: 13px;
+  line-height: 30px;
+  color: #666;
+  width: 100%;
+  padding: 20px 40px;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+}
+.newslist_box .list_title{
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    margin: 10px 0;
+}
+.newslist_box p{
+    font-size: 14px;
+    color: #000;
+    line-height: 2em;
+    text-indent: 2em;
+    color: #666;
+}
+.newslist_box p span{
+    color: #aaa;
+    font-size:13px;
+}
+.newslist_box p:nth-of-type(3){
+    margin-top: 50px;
+}

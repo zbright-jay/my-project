@@ -1,0 +1,128 @@
+@charset "utf-8";
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+form,
+table,
+tr,
+td,
+ul,
+li,
+ol,
+dl,
+dd,
+dt {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-width: 1280px;
+  overflow-x: hidden;
+}
+.cf::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+body {
+  background-color: white;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+ul,
+ol {
+  list-style: none;
+}
+hr{
+    background-color: #cbcbcb;
+    height: 2px;
+    border: 0;
+}
+
+/* 头尾部公共样式 */
+/* 首页头部 */
+header {
+  background-color: #d43b33;
+}
+header .container {
+  height: 75px;
+  line-height: 75px;
+}
+header .container img {
+  float: left;
+}
+header .container nav{
+  line-height: 75px;
+  margin-left: 300px;
+  background-color: pink;
+}
+header .container nav a {
+  display: block;
+  margin-left: 30px;
+  color: #fff;
+  font-size: 14px;
+  width: 80px;
+  height: 75px;
+  float: left;
+  line-height: 75px;
+  text-align: center;
+}
+header a{
+  color: #fff;
+}
+header .container nav a:hover,nav a.on {
+  background: url("../images/nav_bg.png") no-repeat center bottom;
+  cursor: pointer;
+}
+/* 首页横幅图片 */
+.banner {
+  background: url(../images/banner.png) no-repeat;
+  background-size: 100% 100%;
+  height: 280px;
+}
+/* 底部 */
+footer {
+  height: 320px;
+  background: url("../images/footer_bg.png");
+  margin-top: 50px;
+  padding: 60px 0;
+  box-sizing: border-box;
+}
+footer .container {
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .r_text {
+  width: 900px;
+}
+footer .r_text h4 {
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+footer .r_text p {
+  font-size: 13px;
+  line-height: 2em;
+  color: #fff;
+}
+footer .r_text p:last-child {
+  font-size: 12px;
+  color: #aaa;
+  margin: 40px 0;
+}

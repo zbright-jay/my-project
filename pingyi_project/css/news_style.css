@@ -1,0 +1,88 @@
+/* * 首页内容页 */
+.content {
+  position: relative;
+}
+.top_title {
+  width: 350px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+}
+.top_title p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  font-family: 宋体;
+}
+.top_title p:first-child {
+  font-weight: 500;
+}
+.news_type {
+  margin: 0 auto;
+  display: block;
+  width: 705px;
+}
+.news_type a {
+  display: inline-block;
+  width: 350px;
+  height: 40px;
+  line-height: 35px;
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  background-color: #fafafa;
+}
+.news_type a:hover,
+.news_type a.link {
+  background: url("../images/tabbg.png");
+  background-size: 100% 100%;
+}
+.news_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.news_pic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 585px;
+  height: 220px;
+  background-color: #f2f2f2;
+  margin-bottom: 30px;
+}
+.news_pic img {
+  width: 240px;
+  height: 100%;
+}
+.news_pic dl {
+  width: 300px;
+  font-size: 14px;
+  color: #85a5cc;
+}
+.news_pic dl dt {
+  font-size: 16px;
+}
+.news_pic dl dd:nth-of-type(2) {
+  margin-top: 30px;
+  padding-right: 15px;
+}
+.btn_group a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  background-color: #d43b33;
+  margin: 20px 1px 0 0;
+  border-radius: 5px;
+}
+.btn_group a:nth-child(2n-1) {
+  background-color: #d8d8d8;
+}

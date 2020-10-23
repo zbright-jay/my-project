@@ -1,0 +1,49 @@
+.banner {
+  background: url(../images/banner5.jpg) no-repeat;
+  height: 300px;
+  background-size: 100% 100%;
+}
+aside ul li {
+  height: 100px;
+  line-height: 100px;
+}
+form.r_box {
+  width: 900px;
+  float: right;
+}
+form.r_box h3 {
+  margin-bottom: 40px;
+}
+form.r_box p {
+  line-height: 40px;
+  color: #606369;
+  font-size: 13px;
+}
+form.r_box p input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #aaa;
+  outline: none;
+  margin-bottom: 20px;
+}
+form.r_box input[type="submit"] {
+  width: 100%;
+  background-color: #21bcd8;
+  height: 45px;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-top: 20px;
+}
+form.r_box p span {
+  margin-left: 10px;
+}
+form.r_box p textarea {
+  width: 100%;
+  height: 75px;
+  border: 1px solid #aaa;
+  outline: none;
+}

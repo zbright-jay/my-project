@@ -1,0 +1,163 @@
+/* * 首页内容页 */
+.content {
+  margin-top: 100px;
+  position: relative;
+}
+.top_title {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  transform: translate(-50%);
+}
+.top_title p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d43b33;
+  font-family: 宋体;
+}
+.top_title p:first-child {
+  color: #909090;
+  font-size: 25px;
+}
+.top_line {
+  width: 80%;
+  height: 2px;
+  background-color: #cbcbcb;
+}
+/* 首页上部第一部部分文本 */
+.top_text_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 50px 0;
+}
+.top_text_box > p {
+  font-size: 13px;
+  color: #686868;
+  line-height: 2.3em;
+}
+.top_text_box p:nth-of-type(3) {
+  font-weight: bold;
+}
+/* 页面中部横幅图片 */
+.mid_banner {
+  background: url("../images/by_good_project.png") no-repeat;
+  background-size: 100% 100%;
+  height: 460px;
+  padding: 65px 0;
+  box-sizing: border-box;
+}
+.pic_text {
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pic_text .pic {
+  width: 580px;
+  height: 300px;
+  position: relative;
+  right: 100px;
+}
+.pic_text .pic img {
+  width: 100%;
+  height: 100%;
+}
+.pic_text .text {
+  width: 450px;
+  color: #464646;
+  font-size: 13px;
+  line-height: 2.3em;
+}
+.text_title {
+  font-size: 15px;
+  line-height: 1.5em;
+}
+.text_title a {
+  color: #000;
+}
+.text_title a:nth-of-type(2) {
+  color: red;
+}
+.text h5 {
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+}
+.text p {
+  color: #585858;
+  font-size: 13px;
+  border-bottom: 1px solid #aaa;
+}
+/* 下方图片拼图 */
+.banner_title {
+  width: 400px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 50px auto;
+}
+.banner_title p {
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  font-family: 宋体;
+}
+.banner_title p:first-child {
+  font-size: 25px;
+  font-weight: 600;
+}
+.btm_title {
+  font-size: 14px;
+  text-align: center;
+}
+.puzzle {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.puzzle_btm{
+  height: 50px;
+  background-color: #d43b33;
+  color: #fff;
+  line-height: 50px;
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+}
+.puzzle div {
+  width: 300px;
+  height: 170px;
+  margin: 0;
+}
+.puzzle div img {
+  width: 100%;
+  height: 100%;
+}
+.puzzle_text {
+  background-color: #4b4b4b;
+  padding: 30px 20px 10px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.puzzle_text h5 {
+  margin: 15px 0;
+}
+.puzzle_text p{
+  font-size: 12px;
+  line-height: 2em;
+}

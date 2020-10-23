@@ -1,0 +1,105 @@
+/* * 首页内容页 */
+.content {
+  position: relative;
+}
+.top_title {
+  width: 350px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+}
+.top_title p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  font-family: 宋体;
+}
+.top_title p:first-child {
+  font-weight:500;
+}
+.content hr {
+  background-color: #f2f2f2;
+  height: 2px;
+}
+.experts_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.experts {
+  width: 850px;
+  height: 220px;
+  background-color: #fafafa;
+  box-sizing: border-box;
+  padding: 30px 30px;
+  line-height: 1.8em;
+  font-size: 15px;
+}
+.experts h4 {
+  width: 200px;
+  border-bottom: 1px solid #d43b33;
+}
+/* 底部横幅 */
+.btm_banner {
+  height: 600px;
+  background-color: #fafafa;
+  margin-top: 50px;
+  padding: 10px 30px;
+  box-sizing: border-box;
+}
+.pic {
+  width: 300px;
+  height: 300px;
+  padding: 30px 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+  float: left;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+.pic img {
+  width: 240px;
+  height: 160px;
+}
+.pic p {
+  width: 100%;
+  border-bottom: 1px solid #d43b33;
+  line-height: 2em;
+  margin-top: 30px;
+  font-size: 14px;
+}
+.btn_group {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.btn_group a {
+  display: inline-block;
+  width: 380px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+  background-color: #d43b33;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  text-align: left;
+}
+.btn_group a:first-child {
+  background-color: #d8d8d8;
+  text-align: right;
+}
+footer {
+  margin: 0;
+}

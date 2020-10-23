@@ -1,0 +1,97 @@
+/* * 首页内容页 */
+.content {
+  margin-top: 100px;
+  position: relative;
+}
+.top_title {
+  width: 350px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  transform: translate(-50%);
+}
+.top_title p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  font-family: 宋体;
+}
+.top_title p:first-child {
+  font-weight: bold;
+}
+.top_line {
+  width: 80%;
+  height: 2px;
+  background-color: #cbcbcb;
+  margin-bottom: 100px;
+}
+.content>ul>li {
+  float: left;
+  width: 400px;
+  background-color: #fafafa;
+  color: #000;
+  height: 40px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 14px;
+}
+.content ul {
+  margin-bottom: 50px;
+}
+.content>ul>li:hover,.content>ul>li.on {
+  background: url("../images/tabbg.png") no-repeat;
+  background-size: 100% 100%;
+}
+.project_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.box_l{
+    width: 850px;
+    height: 180px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+}
+.box_l dl{
+    width: 540px;
+}
+.box_l dl dd{
+    font-size: 13px;
+    margin: 15px 0;
+    line-height: 1.5em;
+}.box_l dl dd a{
+    margin-right: 100px;
+    color: #666;
+}
+.box_r{
+    width: 300px;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 30px;
+    border: 1px solid #aaa;
+}
+.btn_group a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    background-color: #d43b33;
+    margin:20px 1px 0 0;
+    border-radius: 5px;
+}
+.btn_group a:nth-child(2n-1){
+    background-color: #d8d8d8;
+}
