@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>乐购网-购物车</title>
+    <link href="./images/Bell.png" rel="shortcut icon" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/shopCar.css" />
+    <script src="./js/jquery-1.11.3/jquery.js"></script>
+    <script src="./js/shopcar.js"></script>
+  </head>
+  <body>
+    <!-- 登录头部 -->
+    <div id="head" class="w_100 b_3f">
+      <div class="container">
+        <div class="fl">
+          <a href="./index.html">
+            <img src="./images/logo_00.png" alt="" />
+          </a>
+        </div>
+
+        <div class="fr">
+          <img src="./images/call.jpg" alt="" class="fl" />
+          <span class="fl lh_25">
+            <p>咨询电话</p>
+            <p>XXXX-XXXX</p>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="container pr car">
+      <table id="shopCar">
+        <!-- 头部 -->
+        <tr>
+          <th width="150">
+            <input type="checkbox" class="allSel" />
+            全选
+          </th>
+          <th width="400">商品</th>
+          <th width="100">单价</th>
+          <th width="200">数量</th>
+          <th width="100">小计</th>
+          <th width="200">操作</th>
+        </tr>
+        <!-- 内容 -->
+        <tr>
+          <td><input type="checkbox" class="singleSel" /></td>
+          <td>
+            <img src="./images/67.jpg" alt="" />
+            羽绒服
+          </td>
+          <td class="price">641.02</td>
+          <td>
+            <span class="reNum">-</span>
+            <input type="text" value="1" class="num" />
+            <span class="addNum">+</span>
+          </td>
+          <td class="conut">641.02</td>
+          <td>
+            <span class="del box">删除</span>
+            <br />
+            <span>移到我的关注</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td><input type="checkbox" class="singleSel" /></td>
+          <td>
+            <img src="./images/04.jpg" alt="" />
+            男款风衣
+          </td>
+          <td class="price">347.00</td>
+          <td>
+            <span class="reNum">-</span>
+            <input type="text" value="1" class="num" />
+            <span class="addNum">+</span>
+          </td>
+          <td class="conut">347.00</td>
+          <td>
+            <span class="del box">删除</span>
+            <br />
+            <span>移到我的关注</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td><input type="checkbox" class="singleSel" /></td>
+          <td>
+            <img src="./images/06.jpg" alt="" />
+            碎花裙
+          </td>
+          <td class="price">168.50</td>
+          <td>
+            <span class="reNum">-</span>
+            <input type="text" value="1" class="num" />
+            <span class="addNum">+</span>
+          </td>
+          <td class="conut">68.50</td>
+          <td>
+            <span class="del box">删除</span>
+            <br />
+            <span>移到我的关注</span>
+          </td>
+        </tr>
+
+        <!-- 总计 -->
+        <tr>
+          <td>
+            <input type="checkbox" class="allSel" />
+            全选
+          </td>
+          <td>删除选中商品</td>
+          <td></td>
+          <td>已选择
+            <span class="cf60 numTotal">0</span> 件商品
+            <a href="./Customer_service.html" class="service">联系客服</a>
+          </td>
+          <td>
+            总价:
+            <span class="priceTotal">0.00</span>
+          </td>
+          <td>
+            <span class="box">去结算</span>
+          </td>
+        </tr>
+      </table>
+      <p class="f_18 mt_25">猜你喜欢</p>
+      <hr />
+      <div class="carbox flex_col">
+        <img src="./images/04.jpg" alt="" />
+        <p>中长款风衣</p>
+        <p>￥ 179.00</p>
+      </div>
+      <div class="carbox flex_col">
+        <img src="./images/04.jpg" alt="" />
+        <p>中长款风衣</p>
+        <p>￥ 179.00</p>
+      </div>
+      <div class="carbox flex_col">
+        <img src="./images/04.jpg" alt="" />
+        <p>中长款风衣</p>
+        <p>￥ 179.00</p>
+      </div>
+      <div class="carbox flex_col">
+        <img src="./images/04.jpg" alt="" />
+        <p>中长款风衣</p>
+        <p>￥ 179.00</p>
+      </div>
+      <div class="carbox flex_col">
+        <img src="./images/04.jpg" alt="" />
+        <p>中长款风衣</p>
+        <p>￥ 179.00</p>
+      </div>
+      <div class="carbox flex_col">
+        <img src="./images/04.jpg" alt="" />
+        <p>中长款风衣</p>
+        <p>￥ 179.00</p>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer" class="w_100 b_3f">
+      <div class="container">
+        <div class="f_top flex">
+          <div class="flex_sa">
+            <img src="./images/23.jpg" alt="" />
+            <div class="f_topt">
+              <p>正品保障</p>
+              <p>正品行货 放心选购</p>
+            </div>
+          </div>
+          <div class="flex_sa">
+            <img src="./images/25.jpg" alt="" />
+            <div class="f_topt">
+              <p>满86包邮</p>
+              <p>满86元 免运费</p>
+            </div>
+          </div>
+          <div class="flex_sa">
+            <img src="./images/24.jpg" alt="" />
+            <div class="f_topt">
+              <p>售后无忧</p>
+              <p>7天无理由退货</p>
+            </div>
+          </div>
+          <div class="flex_sa">
+            <img src="./images/28.jpg" alt="" />
+            <div class="f_topt">
+              <p>准时送达</p>
+              <p>收货时间由你做主</p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="f_btm flex">
+          <div>
+            <h1>新手入门</h1>
+            <p>购物流程</p>
+            <p>会员制度</p>
+            <p>订单查询</p>
+            <p>服务协议及隐私说明</p>
+            <p>网站地图</p>
+          </div>
+          <div>
+            <h1>支付方式</h1>
+            <p>货到付款</p>
+            <p>网上付款</p>
+            <p>礼品卡支付</p>
+            <p>其他支付</p>
+          </div>
+          <div>
+            <h1>配送服务</h1>
+            <p>配送进度查询</p>
+            <p>商品验货与签收</p>
+          </div>
+          <div>
+            <h1>相关规则</h1>
+            <p>平台规则</p>
+            <p>退还货政策</p>
+            <p>发票制度</p>
+            <p>帮助中心</p>
+          </div>
+          <div>
+            <p>App更优惠</p>
+            <p><img src="./images/63.png" alt="" /></p>
+          </div>
+          <div>
+            <p>加微信查订单</p>
+            <p><img src="./images/63.png" alt="" /></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 底部文字 -->
+    <div id="btm_text" class="w_100 lh_25 mt_25 f_12 c_80">
+      <p>
+        沪ICP备XXXXXXXXX号 | 经营证照 | 互联网药
+        品信息服务资格证(沪)-经营性-2017-0006 | 违
+        法和不良信息举报电话：XXX-XXXXXXXX | 沪B2 -XXXXXXX |
+      </p>
+      <p>
+        沪公网安备 XXXXXXXXX号 | 友情链接 | 出版物 经营许可证 |
+        增值电信业务经营许可证
+      </p>
+      <p class="flex">
+        <img src="./images/10.jpg" alt="" />
+        <img src="./images/21.jpg" alt="" />
+        <img src="./images/22.png" alt="" />
+        <img src="./images/26.jpg" alt="" />
+        <img src="./images/27.jpg" alt="" />
+        <img src="./images/33.png" alt="" />
+      </p>
+    </div>
+  </body>
+</html>

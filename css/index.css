@@ -1,0 +1,331 @@
+/* banner */
+#banner {
+  height: 450px;
+  background-image: linear-gradient(to right, #550598, #313bb7);
+}
+#banner .container {
+  position: relative;
+}
+.banner_list {
+  width: 230px;
+  height: 450px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.banner_list ul {
+  position: relative;
+}
+.banner_list ul li p {
+  border: 1px solid transparent;
+  padding: 0 0 0 15px;
+  z-index: 999;
+  position: relative;
+}
+.banner_list ul li.on div {
+  display: block;
+}
+.banner_list ul li.on p {
+  border: 1px solid #f60;
+  background: #fff;
+  border-right: 1px solid transparent;
+  color: #000;
+}
+.banner_list div {
+  position: absolute;
+  width: 600px;
+  height: 450px;
+  top: 0;
+  right: -599px;
+  z-index: 555;
+  border: 1px solid #f60;
+  display: none;
+}
+
+/* 秒杀 */
+.goods_box img {
+  width: 285px;
+  height: 155px;
+}
+.goods_box img:last-child {
+  width: 100%;
+  height: 90px;
+  margin-top: 25px;
+}
+.skill_l {
+  width: 230px;
+  height: 285px;
+  background: url(../images/time0.jpg);
+}
+.skill_l .countdown div {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 22px;
+  background-color: saddlebrown;
+  color: #fff;
+}
+.skill_l .countdown {
+  margin-top: 220px;
+}
+.skill_r {
+  width: 950px;
+  height: 285px;
+}
+#swiper-container2 .goods_view {
+  width: 230px;
+  height: 100%;
+  padding: 15px;
+}
+#swiper-container2 .goods_view img {
+  width: 200px;
+  height: 80%;
+}
+#swiper-container2 .goods_view p {
+  line-height: 30px;
+}
+#swiper-container2 .goods_view p span:last-child {
+  line-height: 30px;
+  text-decoration: line-through;
+}
+
+/* 每日好货推荐 */
+#daily_goods {
+  position: relative;
+  padding-bottom: 100px;
+}
+.daily_title {
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 3px;
+  line-height: 132px;
+}
+.daily_title::after {
+  content: "";
+  width: 130px;
+  height: 3px;
+  background-color: red;
+  position: absolute;
+  left: 50%;
+  margin-left: -65px;
+  top: 110px;
+}
+.dy_p1 {
+  font-family: MicrosoftYaHei;
+  font-size: 26px;
+  font-weight: bold;
+  font-style: italic;
+}
+.dy_p2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #9f9f9f;
+}
+.dy_box {
+  width: 165px;
+  height: 250px;
+  margin-top: 10px;
+  position: relative;
+  background-color: hotpink;
+}
+.dy_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% 100%;
+}
+.dy_box span {
+  width: 140px;
+  height: 55px;
+  display: inline-block;
+  text-align: center;
+  padding: 15px 0;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-left: -70px;
+}
+.dy_box span p:nth-of-type(2) {
+  font-size: 12px;
+  color: gray;
+  margin-top: 5px;
+  font-weight: 400;
+}
+/*
+ 服装配饰 */
+.content_l {
+  width: 265px;
+  height: 455px;
+}
+.content_l div:first-child span p:first-child {
+  font-size: 25px;
+  margin: 5px 0;
+}
+.content_l img {
+  width: 100%;
+  height: 330px;
+}
+.content_box span {
+  display: inline-block;
+  width: 70px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  font-size: 12px;
+  border-radius: 15px;
+  margin: 5px 0;
+  border: 1px solid gray;
+}
+.content_m {
+  width: 455px;
+  height: 455px;
+}
+.content_r {
+  width: 450px;
+  height: 455px;
+}
+.content_r div {
+  width: 220px;
+  height: 220px;
+}
+.content_r div p:nth-of-type(1) {
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+.content_r div p:nth-of-type(2) {
+  font-family: MicrosoftYaHei;
+  font-size: 12px;
+  margin: 10px 0;
+  text-align: center;
+}
+/* 内容标题单独样式 */
+/* 母婴 */
+.baby_title span:first-child {
+  border-color: #7a45e5;
+  border-right: 35px solid transparent;
+}
+.baby_a {
+  color: #7a45e5;
+}
+.baby_a::after {
+  background-color: #7a45e5;
+}
+/* 精致人生*/
+.life_title span:first-child {
+  border-color: #f770cf;
+  border-right: 35px solid transparent;
+}
+/* 精致人生*/
+.live_title span:first-child {
+  border-color: #00b262;
+  border-right: 35px solid transparent;
+}
+/* 边栏 */
+
+/* 对固定大小的盒子使用绝对定位中，然后进行位置偏移
+可以解决缩放位置改变的bug */
+.slide_l{
+  width: 100px;
+  position: fixed;
+  left: 60px;
+  top: 50%;
+  left: 50%;
+  margin-left: -720px;
+  margin-top: -125px;
+  z-index: 99999;
+  display: none;
+}
+.slide_l li{
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  position: relative;
+  text-align: center;
+}
+.slide_l li span{
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 5px;
+  position:absolute;
+  right:-60px;
+  background-color: #fff;
+  color: #fff;
+  top:0;
+  display: none;
+}
+.good_p{
+  background: url(../images/floor.png) no-repeat 0 -440px;
+  background-size:fill;
+}
+.good_c{
+  background: url(../images/floor.png) no-repeat 0 -80px;
+  background-size:fill;
+}
+.good_b{
+  background: url(../images/floor.png) no-repeat 0 -240px;
+  background-size:fill;
+}
+.good_life{
+  background: url(../images/floor.png) no-repeat 0 -160px;
+  background-size:fill;
+}
+.good_live{
+  background: url(../images/floor.png) no-repeat 0 -320px;
+  background-size:fill;
+}
+.slide_r {
+  width: 140px;
+  height: 180px;
+  position: fixed;
+  right: 50%;
+  margin-right: -800px;
+  top: 50%;
+  padding: 10px;
+  margin-top: -125px;
+  z-index: 99999;
+  text-align: center;
+  display: none;
+}
+.slide_r hr {
+  border: 1px dashed #808080;
+}
+.slide_r p:last-of-type {
+  height: 25px;
+}
+.slide_r p:last-of-type img {
+  width: 25px;
+  height: 20px;
+  position: absolute;
+  left: 15px;
+  top: -4px;
+}
+
+/* tab切换卡样式 */
+.cloth_tab {
+  width: 920px;
+  height: 455px;
+  background-color: hotpink;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+  z-index: 9999;
+}
+.cloth_tab img {
+  width: 100%;
+  height: 100%;
+}
+

@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(
+    120deg,
+    #1abc9c,
+    #9b59b6,
+    #ff6b81,
+    #1e90ff,
+    #ff7f50,
+    #7ed6df
+  );
+  background-size: 800%;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: bg_gradient 30s infinite;
+  font-family: 微软雅黑;
+}
+@keyframes bg_gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  25% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 0;
+  }
+}
+.container {
+  width: 800px;
+  height: 700px;
+  margin: 50px auto;
+  background: #fff;
+  position: relative;
+}
+.box {
+  width: 80%;
+  height: 650px;
+  float: left;
+  padding: 20px;
+  overflow-y: auto;
+}
+.bot {
+  position: absolute;
+  width: 80%;
+  height: 50px;
+  background: pink;
+  bottom: 0;
+  left: 0;
+}
+#title {
+  width: 100%;
+  height: 40px;
+  background: #1e6fff;
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 8px;
+  font-size: 18px;
+  float: left;
+  color: #fff;
+}
+input {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+.bot > button {
+  width: 100px;
+  height: 50px;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 5px;
+  position: absolute;
+  right: 0;
+  border: 0;
+  background: #1e6fff;
+}
+.txt1 {
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  background: teal;
+  border-radius: 10px;
+  margin: 10px 0 0 10px;
+  text-align: center;
+}
+ul {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  border: 1px solid #000;
+  list-style: none;
+  text-align: cenetr;
+  line-height: 50px;
+}
+ul button {
+  display: block;
+  height: 30px;
+  width: 100%;
+  margin-bottom: 30px;
+  border: 0;
+  background: #1e6fff;
+  color: #fff;
+}
+.txtl {
+  max-width: 400px;
+  margin-left: 20px;
+  padding: 5px;
+  margin: 15px 0 0 15px;
+  float: left;
+  border-radius: 10px;
+  background: peru;
+}
+.txtr {
+  max-width: 400px;
+  margin-left: 20px;
+  padding: 5px;
+  margin: 15px 15px 0 0;
+  float: right;
+  border-radius: 10px;
+  background: tomato;
+}

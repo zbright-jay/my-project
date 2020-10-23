@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "myfont";
+  src: url("../font/iconfont.ttf") format("truetype");
+}
+#head {
+  height: 135px;
+}
+#head .container {
+  padding: 30px 0;
+}
+#banner {
+  height: 600px;
+  background: url(../images/72.png) no-repeat;
+  background-size: cover;
+}
+#banner .container {
+  height: 600px;
+}
+.box {
+  width: 400px;
+  height: 445px;
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  margin-top: -222px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.qr {
+  display: none;
+}
+.qr span {
+  display: block;
+  width: 130px;
+  height: 50px;
+  margin: 40px auto;
+}
+.qr a {
+  color: #808080;
+  margin-left: 10px;
+}
+.qr p:nth-child(3) img {
+  width: 180px;
+  height: 180px;
+  margin: 10px 0 20px 0;
+}
+.f_title {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid gray;
+}
+.f_title li{
+  width: 50%;
+  height: 100%;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+.active {
+  color: #ffa200;
+}
+.active::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: #ffa200;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  margin-left: -50px;
+}
+form input {
+  display: block;
+  width: 330px;
+  height: 45px;
+  outline: none;
+  margin: 30px auto;
+  text-indent: 1rem;
+}
+label {
+  display: block;
+}
+label span {
+  display: inline-block;
+  width: 40px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  background-color: #ffa200;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  color: #fff;
+}
+i {
+  font-family: "myfont";
+  font-size: 20px;
+}
+form input[type="submit"] {
+  border: 0;
+  letter-spacing: 40px;
+  padding-left: 50px;
+}
+form p {
+  text-align: right;
+  padding-right: 20px;
+  color: #808080;
+  font-size: 14px;
+  padding: 0 20px 0 20px;
+  margin-bottom: 10px;
+}
+form p a {
+  font-size: 14px;
+  margin-left: 10px;
+}
+#no_pwd{
+  display: none;
+}

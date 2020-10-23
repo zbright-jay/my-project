@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>乐购网-首页</title>
+    
+    <link href="./images/Bell.png" rel="shortcut icon" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/index.js"></script>
+    <script src="./js/swiper-bundle.js"></script>
+  </head>
+  <body>
+    <!-- 边栏 -->
+    <ul class="slide_l flex_col">
+      <li class="good_p"><span>好物</span></li>
+      <li class="good_c"><span>衣服</span></li>
+      <li class="good_b"><span>母婴</span></li>
+      <li class="good_life"><span>精致</span></li>
+      <li class="good_live"><span>家居</span></li>
+      <li><img src="./images/asil (6).jpg" alt=""></li>
+    </ul>
+    <div class="slide_r flex_col b_3f">
+      <p>App下载</p>
+      <img src="./images/63.png" alt="" class="mt_15" />
+      <hr class="w_100" />
+      <p class="f_14 c_80 pr">
+        <img src="./images/购物车空.png" alt="" />&emsp;购物车
+      </p>
+    </div>
+    <!-- 头部 -->
+    <div id="header" class="b_30 f_14 c_3f w_100">
+      <div class="container">
+        <div class="fl">
+          <a href="#" class="c_3f">乐购www.legou.com</a>
+        </div>
+        <div class="fr">
+          <span>欢迎光临乐购 &emsp;</span>
+          <span
+            >请
+            <a href="./login.html" class="c_f60">登录 |</a>
+            <a href="./register.html" class="c_f60"> 注册</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- 导航 -->
+    <div id="nav" class="w_100 b_3f">
+      <div class="container">
+        <a href="./zone.html" class="fl logo">
+          <img src="./images/logo_00.png" class="w_100"/>
+        </a>
+        <div class="fr nav_r" id="rbox">
+          <form action="" class="fl" id="myform">
+            <input
+              type="text"
+              placeholder="请输入您要搜索的商品名"
+              class="w_100 b_3f t_i"
+            />
+            <input type="submit" value="" class="c_3f" />
+          </form>
+          <div class="btn_group" id="car">
+            <a href="./shopCar.html" class="c_feb f_14"> 购物车 <span>2</span></a>
+            <a href="#" class="f_14 c_gray">我的订单</a>
+          </div>
+          <div class="nav_list">
+            <ul class="flex">
+              <li><a href="#">图书</a></li>
+              <li><a href="#">电子书</a></li>
+              <li><a href="#">原创文学</a></li>
+              <li><a href="#">服装</a></li>
+              <li><a href="#">运动户外</a></li>
+              <li><a href="#">孕婴童</a></li>
+              <li><a href="#">家具</a></li>
+              <li><a href="#">创意文具</a></li>
+              <li><a href="#">地方特产</a></li>
+              <li><a href="#">海外购</a></li>
+              <li><a href="#">电器城</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- banner -->
+    <div id="banner" class="w_100">
+      <div class="container">
+        <div class="banner_list">
+          <ul class="w_100 lh_37 c_3f">
+            <script>
+              for (let i = 1; i < 12; i++) {
+                document.write(`
+                <li>
+                  <p>图书 &emsp; 电子书 &emsp; 童书&emsp;&gt;</p>
+                  <div class="b_3f c_30">列表${i}的内容</div>
+                </li>
+                `);
+              }
+            </script>
+          </ul>
+        </div>
+        <!-- 轮播1 -->
+        <div class="swiper-container" id="swiper-container1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/12.jpg" /></div>
+            <div class="swiper-slide"><img src="./images/72.png" /></div>
+            <div class="swiper-slide"><img src="./images/68.jpg" /></div>
+          </div>
+          <!-- 如果需要分页器 -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 秒杀 -->
+    <div id="s_skill">
+      <div class="container mt_25">
+        <div class="goods_box w_100 flex">
+          <img src="./images/banner1.jpg" alt="" />
+          <img src="./images/banner2.jpg" alt="" />
+          <img src="./images/banner3.jpg" alt="" />
+          <img src="./images/banner4.jpg" alt="" />
+          <img src="./images/31.png" />
+        </div>
+        <div class="skill_box flex mt_25">
+          <div class="skill_l">
+            <div class="countdown flex_sa">
+              <div class="hour"></div>
+              <span class="c_3f">:</span>
+              <div class="minute"></div>
+              <span class="c_3f">:</span>
+              <div class="second"></div>
+            </div>
+          </div>
+          <div class="skill_r">
+            <div class="swiper-container" id="swiper-container2">
+              <div class="swiper-wrapper">
+                <script>
+                  for (let a = 0; a < 4; a++) {
+                    document.write(`
+                    <div class="swiper-slide">
+                      <div class="goods_view b_3f">
+                        <img src="./images/05.jpg" />
+                        <p>小米小爱音响&emsp;play</p>
+                        <p>
+                          <span class="c_red">￥129.00</span>
+                          <span class="f_12 c_gray">￥230.00</span>
+                        </p>
+                      </div>
+                    </div>
+                    `);
+                  }
+                </script>
+              </div>
+              <!-- 如果需要导航按钮 -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 每日好货推荐 -->
+    <div id="daily_goods" class="b_3f mt_25 floor">
+      <div class="container cf">
+        <div class="daily_title pd_15">
+          <img src="./images/65.png" alt="" />
+          每日好货推荐
+          <img src="./images/65.png" alt="" />
+        </div>
+        <div class="daily_l fl dy_w dy_h b_ffd pd_25">
+          <p class="dy_p1">
+            <span class="dy_cl">乐购快枪▪</span>美好生活抢先道
+          </p>
+          <p class="dy_p2">品质好物&emsp;天天低价 > ></p>
+          <div class="flex_sa">
+            <div class="dy_box">
+              <img src="./images/34.jpg" alt="" />
+              <span>- 诗篇 -</span>
+            </div>
+            <div class="dy_box">
+              <img src="./images/46.jpg" alt="" />
+              <span>JNBY</span>
+            </div>
+            <div class="dy_box">
+              <img src="./images/36.jpg" alt="" />
+              <span>品质女装</span>
+            </div>
+          </div>
+        </div>
+        <div class="daily_r fr dy_w dy_h b_acc pd_25">
+          <p class="dy_p1">
+            <span class="dy_cr">品牌活动▪</span><span>最后疯抢</span>
+            <span>3折封顶</span>
+          </p>
+          <p class="dy_p2">150+品牌疯抢中 > ></p>
+          <div class="flex_sa">
+            <div class="dy_box">
+              <img src="./images/45.jpg" alt="" />
+              <span>
+                <p>ITS SKIN</p>
+                <p>明星爆款 买一享三</p>
+              </span>
+            </div>
+            <div class="dy_box">
+              <img src="./images/54.jpg" alt="" />
+              <span>
+                <p>阿芙</p>
+                <p>面部护理好货超值购</p>
+              </span>
+            </div>
+            <div class="dy_box">
+              <img src="./images/48.jpg" alt="" />
+              <span>
+                <p>Rosel女装</p>
+                <p>秋上新 三折封顶</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 服装配饰 -->
+    <div id="cloth" class="mt_75 floor">
+      <div class="container">
+        <div class="cloth_title w_100 flex lh_37 m_25 ct_title">
+          <span class="c_3f">服装配饰</span>
+          <ul>
+            <li class="cloth_a">热销内衣</li>
+            <li>精品男装</li>
+            <li>童装</li>
+          </ul>
+        </div>
+
+        <div class="cloth_content flex pr">
+          <div class="content_l flex_col b_3f">
+            <div>
+              <img src="./images/09.jpg" alt="" />
+              <span>
+                <p>黄金珠宝节</p>
+                <p>没满300减50</p>
+              </span>
+            </div>
+            <div class="content_box flex_sa">
+              <span>女装</span>
+              <span>内衣</span>
+              <span>泳衣</span>
+              <span>功能箱包</span>
+              <span>户外运动</span>
+              <span>男装</span>
+              <span>女鞋</span>
+              <span>男鞋</span>
+              <span>全部分类</span>
+            </div>
+          </div>
+          <div class="content_m flex_col b_3f">
+            <div class="swiper-container swiper3 swp">
+              <div class="mask c_3f">大品牌折扣 &emsp; 三折封顶</div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/70.jpg" /></div>
+                <div class="swiper-slide"><img src="./images/50.jpg" /></div>
+                <div class="swiper-slide"><img src="./images/51.jpg" /></div>
+              </div>
+              <!-- 如果需要导航按钮 -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <!-- 如果需要分页器 -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <img src="./images/76.jpg" alt="" />
+          </div>
+          <div class="content_r flex">
+            <div class="b_3f pd_15">
+              <p>时尚精致女装</p>
+              <p>春夏女装99选3</p>
+              <img src="./images/19.jpg" alt="" />
+            </div>
+            <div class="b_3f pd_15">
+              <p>大牌品质鞋包</p>
+              <p>大牌鞋包不止5折</p>
+              <img src="./images/75.jpg" alt="" />
+            </div>
+            <div class="b_3f pd_15 mt_15">
+              <p>魅力舒适内衣</p>
+              <p>CK文胸买2免1</p>
+              <img src="./images/29.jpg" alt="" />
+            </div>
+            <div class="b_3f pd_15 mt_15">
+              <p>型格潮流男装</p>
+              <p>阿玛尼低至3折</p>
+              <img src="./images/20.jpg" alt="" />
+            </div>
+          </div>
+          <div class="content_btm w_100 flex mt_15">
+            <img src="./images/logo1.jpg" alt="" />
+            <img src="./images/logo2.jpg" alt="" />
+            <img src="./images/logo3.jpg" alt="" />
+            <img src="./images/logo4.jpg" alt="" />
+            <img src="./images/logo5.jpg" alt="" />
+            <img src="./images/logo6.jpg" alt="" />
+            <img src="./images/logo7.jpg" alt="" />
+            <img src="./images/logo8.jpg" alt="" />
+            <img src="./images/logo9.jpg" alt="" />
+          </div>
+          <div class="cloth_tab"><img src="./images/42.jpg" alt="" /></div>
+          <div class="cloth_tab"><img src="./images/43.jpg" alt="" /></div>
+        </div>
+      </div>
+    </div>
+    <!-- 母婴童装-->
+    <div id="baby" class="mt_75 floor">
+      <div class="container">
+        <div class="baby_title w_100 flex lh_37 m_25 ct_title">
+          <span class="c_3f">母婴童装</span>
+          <ul>
+            <li class="baby_a">热销内衣</li>
+            <li>精品男装</li>
+            <li>童装</li>
+          </ul>
+        </div>
+
+        <div class="cloth_content flex pr">
+          <div class="content_l flex_col b_3f">
+            <div>
+              <img src="./images/06.jpg" alt="" />
+              <span>
+                <p>高质量童装</p>
+                <p>没满300减50</p>
+              </span>
+            </div>
+            <div class="content_box flex_sa">
+              <span>女装</span>
+              <span>内衣</span>
+              <span>泳衣</span>
+              <span>功能箱包</span>
+              <span>户外运动</span>
+              <span>男装</span>
+              <span>女鞋</span>
+              <span>男鞋</span>
+              <span>全部分类</span>
+            </div>
+          </div>
+          <div class="content_m flex_col b_3f">
+            <div class="swiper-container swiper4 swp">
+              <div class="mask c_3f">大品牌折扣 &emsp; 三折封顶</div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/68.jpg" /></div>
+                <div class="swiper-slide"><img src="./images/39.jpg" /></div>
+                <div class="swiper-slide"><img src="./images/40.jpg" /></div>
+              </div>
+              <!-- 如果需要导航按钮 -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <!-- 如果需要分页器 -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <img src="./images/76.jpg" alt="" />
+          </div>
+          <div class="content_r flex">
+            <div class="b_3f pd_15">
+              <p>时尚精致女装</p>
+              <p>春夏女装99选3</p>
+              <img src="./images/19.jpg" alt="" />
+            </div>
+            <div class="b_3f pd_15">
+              <p>大牌品质鞋包</p>
+              <p>大牌鞋包不止5折</p>
+              <img src="./images/75.jpg" alt="" />
+            </div>
+            <div class="b_3f pd_15 mt_15">
+              <p>魅力舒适内衣</p>
+              <p>CK文胸买2免1</p>
+              <img src="./images/29.jpg" alt="" />
+            </div>
+            <div class="b_3f pd_15 mt_15">
+              <p>型格潮流男装</p>
+              <p>阿玛尼低至3折</p>
+              <img src="./images/20.jpg" alt="" />
+            </div>
+          </div>
+          <div class="content_btm w_100 flex mt_15">
+            <img src="./images/logo1.jpg" alt="" />
+            <img src="./images/logo2.jpg" alt="" />
+            <img src="./images/logo3.jpg" alt="" />
+            <img src="./images/logo4.jpg" alt="" />
+            <img src="./images/logo5.jpg" alt="" />
+            <img src="./images/logo6.jpg" alt="" />
+            <img src="./images/logo7.jpg" alt="" />
+            <img src="./images/logo8.jpg" alt="" />
+            <img src="./images/logo9.jpg" alt="" />
+          </div>
+          <div class="cloth_tab"><img src="./images/42.jpg" alt="" /></div>
+          <div class="cloth_tab"><img src="./images/43.jpg" alt="" /></div>
+        </div>
+      </div>
+    </div>
+    <!-- 精致人生 -->
+    <div id="life" class="mt_75 floor">
+      <div class="container">
+        <div class="life_title w_100 flex lh_37 m_25 ct_title">
+          <span class="c_3f">精致人生</span>
+          <ul>
+            <li class="life_a">热销内衣</li>
+            <li>精品男装</li>
+            <li>童装</li>
+          </ul>
+        </div>
+
+        <div class="cloth_content flex pr">
+          <div class="content_l flex_col b_3f">
+            <div>
+              <img src="./images/71.jpg" alt="" />
+              <span>
+                <p>完美女神节</p>
+                <p>没满300减50</p>
+              </span>
+            </div>
+            <div class="content_box flex_sa">
+              <span>女装</span>
+              <span>内衣</span>
+              <span>泳衣</span>
+              <span>功能箱包</span>
+              <span>户外运动</span>
+              <span>男装</span>
+              <span>女鞋</span>
+              <span>男鞋</span>
+              <span>全部分类</span>
+            </div>
+          </div>
+          <div class="content_m flex_col b_3f">
+            <div class="swiper-container swiper5 swp">
+              <div class="mask c_3f">大品牌折扣 &emsp; 三折封顶</div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/41.jpg" /></div>
+                <div class="swiper-slide"><img src="./images/42.jpg" /></div>
+                <div class="swiper-slide"><img src="./images/43.jpg" /></div>
+              </div>
+              <!-- 如果需要导航按钮 -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <!-- 如果需要分页器 -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <img src="./images/76.jpg" alt="" />
+          </div>
+          <div class="content_r flex">
+            <div class="b_3f pd_15">
+              <p>时尚精致女装</p>
+              <p>春夏女装99选3</p>
+              <img src="./images/19.jpg" alt="" />
+            </div>
+            <div class="b_3f pd_15">
+              <p>大牌品质鞋包</p>
+              <p>大牌鞋包不止5折</p>
+              <img src="./images/75.jpg" alt="" />
+            </div>
+            <div class="b_3f pd_15 mt_15">
+              <p>魅力舒适内衣</p>
+              <p>CK文胸买2免1</p>
+              <img src="./images/29.jpg" alt="" />
+            </div>
+            <div class="b_3f pd_15 mt_15">
+              <p>型格潮流男装</p>
+              <p>阿玛尼低至3折</p>
+              <img src="./images/20.jpg" alt="" />
+            </div>
+          </div>
+          <div class="content_btm w_100 flex mt_15">
+            <img src="./images/logo1.jpg" alt="" />
+            <img src="./images/logo2.jpg" alt="" />
+            <img src="./images/logo3.jpg" alt="" />
+            <img src="./images/logo4.jpg" alt="" />
+            <img src="./images/logo5.jpg" alt="" />
+            <img src="./images/logo6.jpg" alt="" />
+            <img src="./images/logo7.jpg" alt="" />
+            <img src="./images/logo8.jpg" alt="" />
+            <img src="./images/logo9.jpg" alt="" />
+          </div>
+          <div class="cloth_tab"><img src="./images/42.jpg" alt="" /></div>
+          <div class="cloth_tab"><img src="./images/43.jpg" alt="" /></div>
+        </div>
+      </div>
+    </div>
+    <!-- 家居生活 -->
+    <div id="live" class="mt_75 floor">
+      <div class="container">
+        <div class="live_title w_100 flex lh_37 m_25 ct_title">
+          <span class="c_3f">家居生活</span>
+          <ul>
+            <li class="live_a">热销内衣</li>
+            <li>精品男装</li>
+            <li>童装</li>
+          </ul>
+        </div>
+
+        <div class="cloth_content flex pr">
+          <div class="content_l flex_col b_3f">
+            <div>
+              <img src="./images/02.jpg" alt="" />
+              <span>
+                <p>清新家居</p>
+                <p>没满300减50</p>
+              </span>
+            </div>
+            <div class="content_box flex_sa">
+              <span>女装</span>
+              <span>内衣</span>
+              <span>泳衣</span>
+              <span>功能箱包</span>
+              <span>户外运动</span>
+              <span>男装</span>
+              <span>女鞋</span>
+              <span>男鞋</span>
+              <span>全部分类</span>
+            </div>
+          </div>
+          <div class="content_m flex_col b_3f">
+            <div class="swiper-container swiper6 swp">
+              <div class="mask c_3f">大品牌折扣 &emsp; 三折封顶</div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/34.jpg" /></div>
+                <div class="swiper-slide"><img src="./images/35.jpg" /></div>
+                <div class="swiper-slide"><img src="./images/36.jpg" /></div>
+              </div>
+              <!-- 如果需要导航按钮 -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <!-- 如果需要分页器 -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <img src="./images/76.jpg" alt="" />
+          </div>
+          <div class="content_r flex">
+            <div class="b_3f pd_15">
+              <p>时尚精致女装</p>
+              <p>春夏女装99选3</p>
+              <img src="./images/19.jpg" alt="" />
+            </div>
+            <div class="b_3f pd_15">
+              <p>大牌品质鞋包</p>
+              <p>大牌鞋包不止5折</p>
+              <img src="./images/75.jpg" alt="" />
+            </div>
+            <div class="b_3f pd_15 mt_15">
+              <p>魅力舒适内衣</p>
+              <p>CK文胸买2免1</p>
+              <img src="./images/29.jpg" alt="" />
+            </div>
+            <div class="b_3f pd_15 mt_15">
+              <p>型格潮流男装</p>
+              <p>阿玛尼低至3折</p>
+              <img src="./images/20.jpg" alt="" />
+            </div>
+          </div>
+          <div class="content_btm w_100 flex mt_15">
+            <img src="./images/logo1.jpg" alt="" />
+            <img src="./images/logo2.jpg" alt="" />
+            <img src="./images/logo3.jpg" alt="" />
+            <img src="./images/logo4.jpg" alt="" />
+            <img src="./images/logo5.jpg" alt="" />
+            <img src="./images/logo6.jpg" alt="" />
+            <img src="./images/logo7.jpg" alt="" />
+            <img src="./images/logo8.jpg" alt="" />
+            <img src="./images/logo9.jpg" alt="" />
+          </div>
+          <div class="cloth_tab"><img src="./images/42.jpg" alt="" /></div>
+          <div class="cloth_tab"><img src="./images/43.jpg" alt="" /></div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div id="footer" class="w_100 b_3f mt_75">
+      <div class="container">
+        <div class="f_top flex">
+          <div class="flex_sa">
+            <img src="./images/23.jpg" alt="" />
+            <div class="f_topt">
+              <p>正品保障</p>
+              <p>正品行货 放心选购</p>
+            </div>
+          </div>
+          <div class="flex_sa">
+            <img src="./images/25.jpg" alt="" />
+            <div class="f_topt">
+              <p>满86包邮</p>
+              <p>满86元 免运费</p>
+            </div>
+          </div>
+          <div class="flex_sa">
+            <img src="./images/24.jpg" alt="" />
+            <div class="f_topt">
+              <p>售后无忧</p>
+              <p>7天无理由退货</p>
+            </div>
+          </div>
+          <div class="flex_sa">
+            <img src="./images/28.jpg" alt="" />
+            <div class="f_topt">
+              <p>准时送达</p>
+              <p>收货时间由你做主</p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="f_btm flex">
+          <div>
+            <h1>新手入门</h1>
+            <p>购物流程</p>
+            <p>会员制度</p>
+            <p>订单查询</p>
+            <p>服务协议及隐私说明</p>
+            <p>网站地图</p>
+          </div>
+          <div>
+            <h1>支付方式</h1>
+            <p>货到付款</p>
+            <p>网上付款</p>
+            <p>礼品卡支付</p>
+            <p>其他支付</p>
+          </div>
+          <div>
+            <h1>配送服务</h1>
+            <p>配送进度查询</p>
+            <p>商品验货与签收</p>
+          </div>
+          <div>
+            <h1>相关规则</h1>
+            <p>平台规则</p>
+            <p>退还货政策</p>
+            <p>发票制度</p>
+            <p>帮助中心</p>
+          </div>
+          <div>
+            <p>App更优惠</p>
+            <p><img src="./images/63.png" alt="" /></p>
+          </div>
+          <div>
+            <p>加微信查订单</p>
+            <p><img src="./images/63.png" alt="" /></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 底部文字 -->
+    <div id="btm_text" class="w_100 lh_25 mt_25 f_12 c_80">
+      <p>
+        沪ICP备XXXXXXXXX号 | 经营证照 | 互联网药
+        品信息服务资格证(沪)-经营性-2017-0006 | 违
+        法和不良信息举报电话：XXX-XXXXXXXX | 沪B2 -XXXXXXX |
+      </p>
+      <p>
+        沪公网安备 XXXXXXXXX号 | 友情链接 | 出版物 经营许可证 |
+        增值电信业务经营许可证
+      </p>
+      <p class="flex">
+        <img src="./images/10.jpg" alt="" />
+        <img src="./images/21.jpg" alt="" />
+        <img src="./images/22.png" alt="" />
+        <img src="./images/26.jpg" alt="" />
+        <img src="./images/27.jpg" alt="" />
+        <img src="./images/33.png" alt="" />
+      </p>
+    </div>
+    <!-- 头部遮罩层 -->
+    <div id="mask_t"></div>
+  </body>
+</html>

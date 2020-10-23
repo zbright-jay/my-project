@@ -1,0 +1,202 @@
+#banner {
+  height: 475px;
+  background: url(../images/banner5.jpg) no-repeat;
+  background-size: cover;
+}
+#banner .container {
+  height: 100%;
+}
+.b_mask {
+  width: 270px;
+  height: 400px;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  border-radius: 15px;
+  margin-top: -200px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.b_mask h2 {
+  letter-spacing: 10px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.b_mask hr {
+  border: 1px dashed #808080;
+}
+.b_mask dl {
+  margin: 10px 0;
+  line-height: 23px;
+}
+.b_mask dl dd a {
+  margin-right: 15px;
+}
+.b_mask dd {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+/* 广告 */
+.ad_boxl {
+  width: 234px;
+  height: 370px;
+}
+.ad_boxm {
+  width: 470px;
+  height: 370px;
+}
+.ad_boxr {
+  width: 470px;
+  height: 370px;
+}
+.adimg > img {
+  width: 285px;
+  height: 101px;
+  object-fit: cover;
+  object-position: 100% 0;
+}
+.ad_title {
+  height: 50px;
+  padding: 0 10px;
+  line-height: 50px;
+}
+.ad_title img {
+  width: 22px;
+  height: 22px;
+}
+.ad_box_img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: 60% 0;
+}
+.ad_mask {
+  position: absolute;
+  width: 200px;
+  height: 55px;
+  background-color: rgba(0, 0, 0, 0.6);
+  bottom: 25px;
+  padding: 10px;
+  left: 0;
+}
+.ad_mask img{
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+/* 女装热卖 */
+.sell_box img:first-of-type {
+  display: block;
+}
+.sell_l {
+  width: 272px;
+  height: 410px;
+}
+.sell_mask{
+  position:absolute;
+  padding: 0 10px;
+  width:100%;
+  left: 0;
+  top:30px;
+}
+.sell_mask span {
+  display: inline-block;
+  width: 113px;
+  height: 35px;
+  text-align: center;
+  margin-bottom: 10px;
+  line-height: 35px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.sell_m {
+  width: 630px;
+  height: 410px;
+}
+.m_box {
+  width: 315px;
+  height: 205px;
+}
+.m_cr {
+  width: 135px;
+  height: 135px;
+}
+.sell_r {
+  width: 272px;
+  height: 410px;
+  background: url(../images/勋章.png) no-repeat;
+  background-position: 100% -10%;
+}
+.m_content {
+  width: 100%;
+}
+/* 品牌专区 */
+.brand_l {
+  width: 565px;
+  height: 275px;
+}
+.brand_r {
+  width: 540px;
+  height: 275px;
+}
+.brand_r span {
+  width: 324px;
+  height: 62px;
+  display: block;
+  line-height: 60px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-top: 30px;
+  border: 1px solid #808080;
+}
+.brand_box {
+  width: 285px;
+  height: 250px;
+  background-color: #fff;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 75px;
+}
+.like{
+  display: inline-block;
+  width: 100px;
+  height: 25px;
+  border-radius: 15px;
+  padding: 6px 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  right: 20px;
+  bottom: 100px;
+}
+.brand_box img {
+  width: 100%;
+  height: 170px;
+  margin-right: 5px;
+}
+.like img{
+  width: 15px;
+  height:15px;
+}
+.on {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+.list_box {
+  height: 350px;
+  margin-top: 25px;
+  display: none;
+}
+.active {
+  display: block;
+}
+.totop{
+  width: 30px;
+  position: fixed;
+  right: 50%;
+  margin-right: -680px;
+  bottom: 50px;
+  display: none;
+}
