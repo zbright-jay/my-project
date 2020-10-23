@@ -1,0 +1,61 @@
+@import "./common.less";
+
+/*主体样式*/
+.main {
+  .slide {
+    height: 60px;
+    width: 100%;
+    background-color: @basecolor_3f;
+    margin-bottom: 10px;
+    img {
+      width: 180px;
+      height: 45px;
+    }
+  }
+
+  .content {
+    background: url("/images/sky.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 800px;
+
+    .login_box {
+      width: 700px;
+      margin-top: 100px;
+      padding: 30px;
+      .border(0px, @basecolor_3f, 15px, rgba(0, 0, 0, 0.3));
+      p.title {
+        line-height: 50px;
+        padding-left: 15px;
+        color: orange;
+        font-weight: bold;
+        font-size: 22px;
+      }
+
+      p {
+        color: @basecolor_3f;
+      }
+
+      a {
+        color: @basecolor_3f;
+      }
+
+      .link_reg {
+        font-size: 12px;
+      }
+
+      p.text-center {
+        font-size: 12px;
+      }
+      .input-group {
+        position: relative;
+        p {
+          position: absolute;
+          bottom: -25px;
+          font-size: 14px;
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

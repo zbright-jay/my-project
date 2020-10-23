@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./images/baozhan.jpg" />
+  <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css" />
+  <link rel="stylesheet" href="./lib/iconfont/iconfont.css" />
+  <link rel="stylesheet" href="./dist//css/recharge.min.css" />
+  <script src="./lib/jquery/jquery.js"></script>
+  <script src="./lib/bootstrap/js/bootstrap.js"></script>
+  <script src="./lib/Popper/popper.js"></script>
+  <script src="./js/recharge.js"></script>
+  <title>recharge</title>
+</head>
+
+<body>
+  <!-- 头部 -->
+  <div class="header">
+    <div class="container d-flex justify-content-end">
+      <ul class="d-flex justify-content-between">
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="#">帮助</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 主体 -->
+  <div class="main">
+    <div class="banner">
+      <div class="container d-flex align-items-center">
+        <img src="./images/logo.png" alt="" />
+        <span class="text-primary">账户充值</span>
+      </div>
+    </div>
+
+    <div class="container-lg">
+      <div class="remind mt-5">
+        <dl>
+          <dt class="text-info">账户充值</dt>
+          <dd>
+            1. 由于银行系统的限制，充值功能建议使用 IE
+            内核（IE8及以上）的浏览器。
+          </dd>
+          <dd>
+            2.
+            请注意：为打击信用卡套现行为，充值资金必须经过投资回款后方能允许提现。
+          </dd>
+        </dl>
+      </div>
+
+      <div class="recharge_list">
+        <ul class="d-flex recharge_tab">
+          <li><a>线上充值(第三方平台)</a></li>
+          <li class="on"><a>线下</a></li>
+        </ul>
+        <div class="list_box list_box_defult">
+          <h3 class="text-danger">系统暂不支持，请采用线下充值</h3>
+        </div>
+        <div class="list_box">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">银行名称</th>
+                <th scope="col">开户人姓名</th>
+                <th scope="col">银行账号</th>
+                <th scope="col">开户行支行名称</th>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+          <h4 class="text-primary">第一步</h4>
+          <p class="text-primary mb-3">
+            请选择往以上一个账号汇款或转账您所
+            要充值的金额（若您是跨行转账，推荐选
+            择建行）。注：请保存您的交易记录信息。
+          </p>
+          <h4 class="text-primary">第二步</h4>
+          <p class="text-primary">
+            款或转账成功后，再选择你所汇款或转账的
+            账号，并填写以下完整的信息后，提交您的
+            线下充值申请。我们将会在下个工作日核对 您的申请。
+          </p>
+
+          <div class="mt-3 form">
+            <div class="form-group">
+              <label for="bank">银行</label>
+              <select class="form-control" id="bank">
+
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="recharge_amount">交易金额</label>
+              <input type="text" class="form-control money" id="recharge_amount" />
+            </div>
+
+            <button class="btn btn-primary rechargeBtn">确认提交</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 尾部 -->
+  <div class="footer mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <p>专业Java培训、PHP培训、Android培训机构</p>
+          <p>版权所有： 2006-2015成都源代码教育咨询有限公司</p>
+          <p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+          <p>
+            电  话： 028-86261949 / 400-808-6840  邮箱： yuandaima@itsource.cn
+          </p>
+          <p>
+            <a href="http://www.miitbeian.gov.cn">蜀ICP备14030149号-1</a>
+            <a href="http://www.gaj.chengdu.gov.cn" class="ml-5">蜀公网安备510114990541</a>
+          </p>
+        </div>
+        <div class="col-lg-5 d-flex">
+          <div class="box_l d-flex flex-column">
+            <p class="mb-3">官方微博</p>
+            <img src="./images/tecent.png" alt="" />
+            <img src="./images/sina.png" alt="" />
+          </div>
+          <div class="box_r d-flex flex-column">
+            <p class="mb-3">官方微信</p>
+            <img src="./images/wx.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

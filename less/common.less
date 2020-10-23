@@ -1,0 +1,100 @@
+@basecolor1: #333333;
+@basecolor_3f: #fff;
+@basecolor_blue: #3498db;
+@basecolor_f8: #f8f8f8;
+@basecolor_337: #337ab7;
+@basecolor_d: #dddddd;
+
+.border(@width, @color, @radius, @bgc) {
+  border: @width solid @color;
+  border-radius: @radius;
+  background-color: @bgc;
+}
+.b_3f {
+  background-color: #fff;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+dl,
+a {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+i {
+  color: #fff;
+}
+.row {
+  margin: 0;
+}
+a {
+  cursor: pointer;
+  text-decoration: none !important;
+}
+/*头部样式*/
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: @basecolor1;
+  display: flex;
+
+  ul {
+    line-height: 50px;
+    list-style: none;
+
+    li {
+      color: @basecolor_3f;
+      font-size: 15px;
+      cursor: pointer;
+      margin-right: 25px;
+
+      a {
+        color: @basecolor_3f;
+
+        &:hover {
+          color: @basecolor_blue;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+/*底部样式*/
+.footer {
+  line-height: 30px;
+  padding: 30px 0;
+  background-color: @basecolor_f8;
+
+  p {
+    font-size: 13px;
+  }
+
+  .box_l {
+    width: 50%;
+    height: 100%;
+
+    img {
+      width: 80%;
+      height: 70px;
+    }
+  }
+
+  .box_r {
+    width: 50%;
+    height: 100%;
+
+    img {
+      width: 80%;
+      height: 160px;
+    }
+  }
+}

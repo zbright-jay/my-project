@@ -1,0 +1,54 @@
+<div class="bank_card">
+    <h6>银行卡管理</h6>
+    <div class="row d-flex justify-content-between align-items-center">
+        <button class="btn btn-primary m-3" data-toggle="modal" data-target="#myModal">
+            新增银行卡
+        </button>
+    </div>
+
+    <hr>
+
+    <div class="row" id="cardList">
+
+    </div>
+
+    <!-- 模态框 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">绑定银行卡</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <p>
+                        银行名称：<input id="bankName" type="text" class="form-control" />
+                    </p>
+                    <p>
+                        开户行支行名称:<input id="branchName" type="text" class="form-control" />
+                    </p>
+                    <p>
+                        银行卡号:<input id="cardNumber" type="text" class="form-control" />
+                    </p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        取消
+                    </button>
+                    <button id="saveBtn" type="button" class="btn btn-primary">
+                        立即绑定
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="/dist/css/bank_card.min.css" />
+
+<script src="/js/bank_card.js"></script>

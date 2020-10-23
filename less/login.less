@@ -1,0 +1,45 @@
+@import "./common.less";
+
+/*主体样式*/
+.main {
+  .slide {
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    margin-bottom: 10px;
+    img {
+      width: 180px;
+      height: 45px;
+    }
+  }
+
+  .content {
+    background: url(/images/bg2.jpg) no-repeat;
+    background-size: 100% 100%;
+    height: 750px;
+
+    .login_box {
+      width: 700px;
+      padding: 50px 30px;
+      margin-top: 150px;
+      .border(px, @basecolor_3f, 15px, rgba(0, 0, 0, 0.3));
+
+      p.title {
+        line-height: 50px;
+        padding-left: 15px;
+        color: orange;
+        font-weight: bold;
+        font-size: 22px;
+      }
+
+      p {
+        color: @basecolor_3f;
+      }
+
+      .link_reg {
+        font-size: 12px;
+        margin-left: 15px;
+      }
+    }
+  }
+}

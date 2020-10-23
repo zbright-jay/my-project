@@ -1,0 +1,42 @@
+<!-- 主体 -->
+<div class="invest">
+  <!-- 投资列表 -->
+  <div class="invest_list container mt-3 b_3f pt-3 pb-3">
+    <h4 class="list_title">投资列表</h4>
+    <div class="invest_status d-flex align-items-center mt-3">
+      <span>标的状态</span>
+
+      <div class="btn_group d-flex justify-content-start ml-3">
+        <button class="btn btn btn-secondary">全部</button>
+        <button class="btn btn btn-secondary">招标中</button>
+        <button class="btn btn btn-secondary">还款中</button>
+      </div>
+    </div>
+
+
+    <table class="table mt-5 container invest">
+      <thead>
+        <tr>
+          <th scope="col">借款人</th>
+          <th scope="col">借款标题</th>
+          <th scope="col">年利率</th>
+          <th scope="col">金额</th>
+          <th scope="col">还款方式</th>
+          <th scope="col">进度</th>
+          <th scope="col">操作</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+    <div class="row d-flex justify-content-center mt-5 align-items-center">
+      <div id="page" class="page_div"></div>
+    </div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="../dist/css/invest.min.css" />
+<link rel="stylesheet" href="/lib/xlPaging/css/xlPaging.css">
+<script src="../js/invest.js"></script>
+<script src="/lib/xlPaging/js/jquery.xlPaging.js"></script>

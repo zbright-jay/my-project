@@ -1,0 +1,102 @@
+@import "../less/common.less";
+body {
+  background: url(/images/tree.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.main {
+  /*  充值界面banner标题 */
+  font-size: 14px;
+  .banner {
+    height: 70px;
+    background-color: #e6e6e6;
+    .container {
+      height: 100%;
+      img {
+        width: 150px;
+        height: 35px;
+      }
+      span {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 35px;
+      }
+    }
+  }
+
+  /*  充值界面提醒 */
+  .remind {
+    height: 150px;
+    background-color: #f4f8fa;
+    border-left: 3px solid @basecolor_337;
+    dl {
+      margin-left: 50px;
+      padding-top: 20px;
+      dt {
+        font-size: 22px;
+        font-weight: 400;
+        margin-bottom: 15px;
+      }
+      dd {
+        font-size: 14px;
+      }
+    }
+  }
+
+  /*  充值列表*/
+  .recharge_list {
+    ul {
+      margin-top: 45px;
+      li {
+        margin-right: 25px;
+        font-size: 16px;
+        padding: 5px 20px;
+        position: relative;
+        top: 1px;
+        border: 1px solid transparent;
+      }
+      .on {
+        border-radius: 5px 5px 0 0;
+        border: 1px solid #e6e6e6;
+        border-bottom: transparent;
+        background-color: @basecolor_3f;
+        color: @basecolor_337;
+      }
+    }
+    .list_box_defult {
+      display: none;
+    }
+    .list_box {
+      border: 1px solid #e6e6e6;
+      padding: 25px;
+      background-color: #fff;
+      h3 {
+        text-align: center;
+      }
+      table {
+        margin-top: 20px;
+        text-align: center;
+        tbody {
+          tr {
+            &:nth-of-type(2n-1) {
+              background-color: papayawhip;
+            }
+          }
+          span {
+            font-size: 16px;
+            color: #07817a;
+          }
+        }
+      }
+      h4 {
+        font-weight: 300 !important;
+      }
+      p {
+        font-size: 14px;
+      }
+      .form {
+        width: 70%;
+        margin: 20px auto;
+      }
+    }
+  }
+}

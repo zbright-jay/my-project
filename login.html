@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./images/baozhan.jpg" />
+  <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css" />
+  <link rel="stylesheet" href="./lib/iconfont/iconfont.css" />
+  <link rel="stylesheet" href="./dist/css/login.min.css" />
+  <script src="./lib/jquery/jquery.js"></script>
+  <script src="./lib/bootstrap/js/bootstrap.js"></script>
+  <script src="./lib/Popper/popper.js"></script>
+  <script src="./js/login.js"></script>
+  <title>积木盒子p2p-登录</title>
+</head>
+
+<body>
+  <!-- 头部 -->
+  <div class="header">
+    <div class="container d-flex justify-content-end">
+      <ul class="d-flex justify-content-between">
+        <li><a href="./login.html">登录</a></li>
+        <li><a href="./register.html">快速注册</a></li>
+        <li><a href="#">帮助</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 主体 -->
+  <div class="main">
+    <div class="slide container d-flex align-items-center">
+      <img src="./images/logo.png" alt="" />
+    </div>
+
+    <div class="content">
+      <div class="container d-flex justify-content-center">
+        <div class="login_box d-flex flex-column align-items-center pb-5">
+          <p class="title w-100">用户登录</p>
+
+          <p class="w-50 mt-3 mb-1">用户名</p>
+          <div class="input-group w-50 mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text bg-info" id="basic-addon1">
+                <i class="iconfont icon-user"></i>
+              </span>
+            </div>
+            <input type="text" class="form-control user" aria-describedby="basic-addon1" />
+          </div>
+
+          <p class="w-50 mt-3 mb-1">密码</p>
+          <div class="input-group w-50 mb-4">
+            <div class="input-group-prepend">
+              <span class="input-group-text bg-info" id="basic-addon1">
+                <i class="iconfont icon-mima"></i>
+              </span>
+            </div>
+            <input type="password" class="form-control pwd" aria-describedby="basic-addon1" />
+          </div>
+
+          <p>
+            <button type="button" class="btn btn-success login_btn">
+              登录
+            </button>
+            <a href="/register.html" class="link_reg">新用户,马上注册</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 尾部 -->
+  <div class="footer mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <p>专业Java培训、PHP培训、Android培训机构</p>
+          <p>版权所有： 2006-2015成都源代码教育咨询有限公司</p>
+          <p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+          <p>
+            电  话： 028-86261949 / 400-808-6840  邮箱： yuandaima@itsource.cn
+          </p>
+          <p>
+            <a href="http://www.miitbeian.gov.cn">蜀ICP备14030149号-1</a>
+            <a href="http://www.gaj.chengdu.gov.cn" class="ml-5">蜀公网安备510114990541</a>
+          </p>
+        </div>
+        <div class="col-lg-5 d-flex">
+          <div class="box_l d-flex flex-column">
+            <p class="mb-3">官方微博</p>
+            <img src="./images/tecent.png" alt="" />
+            <img src="./images/sina.png" alt="" />
+          </div>
+          <div class="box_r d-flex flex-column">
+            <p class="mb-3">官方微信</p>
+            <img src="./images/wx.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

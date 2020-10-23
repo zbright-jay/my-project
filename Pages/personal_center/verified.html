@@ -1,0 +1,58 @@
+<div class="verified">
+  <div class="verified_title">
+    <h6>实名认证</h6>
+  </div>
+
+  <p class="warn text-danger">
+    为保护您账户安全，实名认证成功之后不能修改信息，请认真填写！
+  </p>
+
+  <form class="col-md-10">
+    <div class="form-group">
+      <label for="name">姓名</label>
+      <input type="text" class="form-control" id="name" ">
+    </div>
+    <div class="form-group">
+      <label for="sex">性别</label>
+      <select class="form-control" id="sex">
+        <option value="man">男</option>
+        <option value="woman">女</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="card_type">证件类型</label>
+      <select class="form-control" id="card_type">
+        <option value="id-card">居民身份证</option>
+        <option value="drive-card">驾驶证</option>
+        <option value="officer-card">军官证</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="card_num">证件号码</label>
+      <input type="text" class="form-control" id="card_num" ">
+    </div>
+    <div class="form-group">
+      <label for="birth_date">出生日期</label>
+      <input type="text" class="form-control" id="birth_date" ">
+    </div>
+    <div class="form-group">
+      <label for="card_address">证件地址</label>
+      <input type="text" class="form-control" id="card_address" ">
+    </div>
+    <div class="form-group">
+      <label for="card_address">身份证照片</label>
+      <div class="pic_link">
+        <input type="file" class="form-control" id="card_address" ">
+      </div>
+      <div class="pic_link">
+        <input type="file" class="form-control" id="card_address" ">
+      </div>
+
+      <span class="text-info"><a>查看样板</a></span>
+    </div>
+    <button class="btn btn-primary">提交认证</button>
+  </form>
+</div>
+
+<link rel="stylesheet" href="/dist/css/personal_verified.min.css" />
+<script src="/dist/js/personal_verified.min.js"></script>

@@ -1,0 +1,47 @@
+@import "./common.less";
+
+.invest {
+  .invest_list {
+    .invest_status {
+      .btn_group {
+        button {
+          border-radius: 0 !important;
+          background-color: #fff;
+          color: #555;
+          border: 1px solid #e7e7e7;
+          width: 100px;
+          height: 35px;
+          outline: none !important;
+          &:first-child {
+            border-radius: 5px 0 0 5px !important;
+            box-shadow: 0 0 10px #555 inset;
+          }
+          &:nth-child(2) {
+            border-left: transparent;
+            border-right: transparent;
+          }
+
+          &:last-child {
+            border-radius: 0 5px 5px 0 !important;
+          }
+        }
+      }
+    }
+  }
+  table {
+    text-align: center;
+    line-height: 30px;
+    tbody {
+      tr {
+        &:nth-of-type(2n-1){
+          background-color: #e6fffd;
+        }
+        td {
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
